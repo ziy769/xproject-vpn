@@ -16,149 +16,21 @@ geox-url:
   asn: >-
     https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
 rule-providers:
-  youtube:
+  geolocation-cn:
     type: http
     format: mrs
     behavior: domain
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs
-    path: ./ruleset/youtube.mrs
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-cn.mrs
+    path: ./ruleset/geolocation-cn.mrs
     interval: 86400
-  google:
+  cn:
     type: http
     format: mrs
     behavior: ipcidr
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs
-    path: ./ruleset/google.mrs
-    interval: 86400
-  facebook:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/facebook.mrs
-    path: ./ruleset/facebook.mrs
-    interval: 86400
-  instagram:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/instagram.mrs
-    path: ./ruleset/instagram.mrs
-    interval: 86400
-  twitter:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/twitter.mrs
-    path: ./ruleset/twitter.mrs
-    interval: 86400
-  tiktok:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs
-    path: ./ruleset/tiktok.mrs
-    interval: 86400
-  linkedin:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/linkedin.mrs
-    path: ./ruleset/linkedin.mrs
-    interval: 86400
-  netflix:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs
-    path: ./ruleset/netflix.mrs
-    interval: 86400
-  hulu:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/hulu.mrs
-    path: ./ruleset/hulu.mrs
-    interval: 86400
-  disney:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/disney.mrs
-    path: ./ruleset/disney.mrs
-    interval: 86400
-  hbo:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/hbo.mrs
-    path: ./ruleset/hbo.mrs
-    interval: 86400
-  amazon:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/amazon.mrs
-    path: ./ruleset/amazon.mrs
-    interval: 86400
-  bahamut:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/bahamut.mrs
-    path: ./ruleset/bahamut.mrs
-    interval: 86400
-  steam:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs
-    path: ./ruleset/steam.mrs
-    interval: 86400
-  epicgames:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/epicgames.mrs
-    path: ./ruleset/epicgames.mrs
-    interval: 86400
-  ea:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/ea.mrs
-    path: ./ruleset/ea.mrs
-    interval: 86400
-  ubisoft:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/ubisoft.mrs
-    path: ./ruleset/ubisoft.mrs
-    interval: 86400
-  blizzard:
-    type: http
-    format: mrs
-    behavior: domain
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/blizzard.mrs
-    path: ./ruleset/blizzard.mrs
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs
+    path: ./ruleset/cn.mrs
     interval: 86400
   geolocation-!cn:
     type: http
@@ -175,14 +47,6 @@ rule-providers:
     url: >-
       https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs
     path: ./ruleset/private.mrs
-    interval: 86400
-  telegram:
-    type: http
-    format: mrs
-    behavior: ipcidr
-    url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs
-    path: ./ruleset/telegram.mrs
     interval: 86400
 dns:
   enable: true
@@ -203,228 +67,227 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
+  - name: "SG - Amazoncom\r [ VLESS - TLS ]"
     type: vless
     server: quiz.vidio.com
     port: 443
-    uuid: cfeb5207-01bd-4ac8-af4e-ff374519c599
+    uuid: b8697fa9-bf39-443c-87c6-fe45c134c603
     tls: true
     servername: xinquins.dpdns.org
     network: ws
     ws-opts:
-      path: /46.8.229.109-2053
+      path: /3.1.116.161-2053
       headers:
         host: xinquins.dpdns.org
-    tfo: false
+    tfo: true
     skip-cert-verify: false
-  - name: "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
+  - name: "SG - Amazoncom\r [ VLESS - TLS ] 2"
     type: vless
     server: quiz.vidio.com
     port: 443
-    uuid: cfeb5207-01bd-4ac8-af4e-ff374519c599
+    uuid: b8697fa9-bf39-443c-87c6-fe45c134c603
     tls: true
     servername: xinquins.dpdns.org
     network: ws
     ws-opts:
-      path: /91.108.243.104-443
+      path: /3.1.116.161-8443
       headers:
         host: xinquins.dpdns.org
-    tfo: false
+    tfo: true
     skip-cert-verify: false
-  - name: "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
+  - name: "SG - Hetzner Online\r [ VLESS - TLS ]"
     type: vless
     server: quiz.vidio.com
     port: 443
-    uuid: cfeb5207-01bd-4ac8-af4e-ff374519c599
+    uuid: b8697fa9-bf39-443c-87c6-fe45c134c603
     tls: true
     servername: xinquins.dpdns.org
     network: ws
     ws-opts:
-      path: /142.171.220.62-16044
+      path: /5.223.49.4-2053
       headers:
         host: xinquins.dpdns.org
-    tfo: false
+    tfo: true
     skip-cert-verify: false
-  - name: "FI - Hostkey\r [ VLESS - TLS ]"
-    type: vless
+  - name: "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ]"
+    type: trojan
     server: quiz.vidio.com
     port: 443
-    uuid: cfeb5207-01bd-4ac8-af4e-ff374519c599
+    password: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
     tls: true
-    servername: xinquins.dpdns.org
+    sni: xinquins.dpdns.org
     network: ws
     ws-opts:
-      path: /66.151.34.227-8443
+      path: /31.56.196.230-2053
       headers:
         host: xinquins.dpdns.org
-    tfo: false
+    tfo: true
     skip-cert-verify: false
-  - name: "GB - Aeza International\r [ VLESS - TLS ]"
-    type: vless
+  - name: "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ] 2"
+    type: trojan
     server: quiz.vidio.com
     port: 443
-    uuid: cfeb5207-01bd-4ac8-af4e-ff374519c599
+    password: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
     tls: true
-    servername: xinquins.dpdns.org
+    sni: xinquins.dpdns.org
     network: ws
     ws-opts:
-      path: /83.147.254.154-443
+      path: /31.56.196.240-2053
       headers:
         host: xinquins.dpdns.org
-    tfo: false
+    tfo: true
     skip-cert-verify: false
+  - name: "ID - PT Telkom Indonesia\r [ TROJAN - TLS ]"
+    type: trojan
+    server: quiz.vidio.com
+    port: 443
+    password: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+    tls: true
+    sni: xinquins.dpdns.org
+    network: ws
+    ws-opts:
+      path: /36.95.152.58-12137
+      headers:
+        host: xinquins.dpdns.org
+    tfo: true
+    skip-cert-verify: false
+  - name: "ID - Amazoncom\r [ TROJAN - TLS ]"
+    type: trojan
+    server: quiz.vidio.com
+    port: 443
+    password: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+    tls: true
+    sni: xinquins.dpdns.org
+    network: ws
+    ws-opts:
+      path: /43.218.77.16-1443
+      headers:
+        host: xinquins.dpdns.org
+    tfo: true
+    skip-cert-verify: false
+  - name: "SG - Amazoncom\r [ SS - TLS ]"
+    type: ss
+    server: quiz.vidio.com
+    port: 443
+    cipher: none
+    password: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  - name: "SG - Hetzner Online\r [ SS - TLS ]"
+    type: ss
+    server: quiz.vidio.com
+    port: 443
+    cipher: none
+    password: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  - name: "SG - Alibaba\r [ SS - TLS ]"
+    type: ss
+    server: quiz.vidio.com
+    port: 443
+    cipher: none
+    password: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
 proxy-groups:
   - type: select
-    name: 🚀 节点选择
+    name: 🚀 Benxx Project
     proxies:
       - DIRECT
       - REJECT
-      - ⚡ 自动选择
-      - "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
-      - "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
-      - "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
-      - "FI - Hostkey\r [ VLESS - TLS ]"
-      - "GB - Aeza International\r [ VLESS - TLS ]"
-  - name: ⚡ 自动选择
+      - ⚡ Auto Select
+      - "SG - Amazoncom\r [ VLESS - TLS ]"
+      - "SG - Amazoncom\r [ VLESS - TLS ] 2"
+      - "SG - Hetzner Online\r [ VLESS - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ] 2"
+      - "ID - PT Telkom Indonesia\r [ TROJAN - TLS ]"
+      - "ID - Amazoncom\r [ TROJAN - TLS ]"
+      - "SG - Amazoncom\r [ SS - TLS ]"
+      - "SG - Hetzner Online\r [ SS - TLS ]"
+      - "SG - Alibaba\r [ SS - TLS ]"
+  - name: ⚡ Auto Select
     type: url-test
     proxies:
-      - "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
-      - "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
-      - "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
-      - "FI - Hostkey\r [ VLESS - TLS ]"
-      - "GB - Aeza International\r [ VLESS - TLS ]"
+      - "SG - Amazoncom\r [ VLESS - TLS ]"
+      - "SG - Amazoncom\r [ VLESS - TLS ] 2"
+      - "SG - Hetzner Online\r [ VLESS - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ] 2"
+      - "ID - PT Telkom Indonesia\r [ TROJAN - TLS ]"
+      - "ID - Amazoncom\r [ TROJAN - TLS ]"
+      - "SG - Amazoncom\r [ SS - TLS ]"
+      - "SG - Hetzner Online\r [ SS - TLS ]"
+      - "SG - Alibaba\r [ SS - TLS ]"
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - type: select
-    name: 📹 油管视频
+    name: 🏠 Private Network
     proxies:
-      - 🚀 节点选择
+      - 🚀 Benxx Project
       - DIRECT
       - REJECT
-      - ⚡ 自动选择
-      - "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
-      - "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
-      - "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
-      - "FI - Hostkey\r [ VLESS - TLS ]"
-      - "GB - Aeza International\r [ VLESS - TLS ]"
+      - ⚡ Auto Select
+      - "SG - Amazoncom\r [ VLESS - TLS ]"
+      - "SG - Amazoncom\r [ VLESS - TLS ] 2"
+      - "SG - Hetzner Online\r [ VLESS - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ] 2"
+      - "ID - PT Telkom Indonesia\r [ TROJAN - TLS ]"
+      - "ID - Amazoncom\r [ TROJAN - TLS ]"
+      - "SG - Amazoncom\r [ SS - TLS ]"
+      - "SG - Hetzner Online\r [ SS - TLS ]"
+      - "SG - Alibaba\r [ SS - TLS ]"
   - type: select
-    name: 🔍 谷歌服务
+    name: 🔒 China Services
     proxies:
-      - 🚀 节点选择
+      - 🚀 Benxx Project
       - DIRECT
       - REJECT
-      - ⚡ 自动选择
-      - "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
-      - "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
-      - "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
-      - "FI - Hostkey\r [ VLESS - TLS ]"
-      - "GB - Aeza International\r [ VLESS - TLS ]"
+      - ⚡ Auto Select
+      - "SG - Amazoncom\r [ VLESS - TLS ]"
+      - "SG - Amazoncom\r [ VLESS - TLS ] 2"
+      - "SG - Hetzner Online\r [ VLESS - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ] 2"
+      - "ID - PT Telkom Indonesia\r [ TROJAN - TLS ]"
+      - "ID - Amazoncom\r [ TROJAN - TLS ]"
+      - "SG - Amazoncom\r [ SS - TLS ]"
+      - "SG - Hetzner Online\r [ SS - TLS ]"
+      - "SG - Alibaba\r [ SS - TLS ]"
   - type: select
-    name: 🏠 私有网络
+    name: 🌐 Non-China
     proxies:
-      - 🚀 节点选择
+      - 🚀 Benxx Project
       - DIRECT
       - REJECT
-      - ⚡ 自动选择
-      - "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
-      - "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
-      - "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
-      - "FI - Hostkey\r [ VLESS - TLS ]"
-      - "GB - Aeza International\r [ VLESS - TLS ]"
+      - ⚡ Auto Select
+      - "SG - Amazoncom\r [ VLESS - TLS ]"
+      - "SG - Amazoncom\r [ VLESS - TLS ] 2"
+      - "SG - Hetzner Online\r [ VLESS - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ] 2"
+      - "ID - PT Telkom Indonesia\r [ TROJAN - TLS ]"
+      - "ID - Amazoncom\r [ TROJAN - TLS ]"
+      - "SG - Amazoncom\r [ SS - TLS ]"
+      - "SG - Hetzner Online\r [ SS - TLS ]"
+      - "SG - Alibaba\r [ SS - TLS ]"
   - type: select
-    name: 📲 电报消息
+    name: 🐟 Fall Back
     proxies:
-      - 🚀 节点选择
+      - 🚀 Benxx Project
       - DIRECT
       - REJECT
-      - ⚡ 自动选择
-      - "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
-      - "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
-      - "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
-      - "FI - Hostkey\r [ VLESS - TLS ]"
-      - "GB - Aeza International\r [ VLESS - TLS ]"
-  - type: select
-    name: 🌐 社交媒体
-    proxies:
-      - 🚀 节点选择
-      - DIRECT
-      - REJECT
-      - ⚡ 自动选择
-      - "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
-      - "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
-      - "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
-      - "FI - Hostkey\r [ VLESS - TLS ]"
-      - "GB - Aeza International\r [ VLESS - TLS ]"
-  - type: select
-    name: 🎬 流媒体
-    proxies:
-      - 🚀 节点选择
-      - DIRECT
-      - REJECT
-      - ⚡ 自动选择
-      - "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
-      - "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
-      - "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
-      - "FI - Hostkey\r [ VLESS - TLS ]"
-      - "GB - Aeza International\r [ VLESS - TLS ]"
-  - type: select
-    name: 🎮 游戏平台
-    proxies:
-      - 🚀 节点选择
-      - DIRECT
-      - REJECT
-      - ⚡ 自动选择
-      - "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
-      - "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
-      - "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
-      - "FI - Hostkey\r [ VLESS - TLS ]"
-      - "GB - Aeza International\r [ VLESS - TLS ]"
-  - type: select
-    name: 🌐 非中国
-    proxies:
-      - 🚀 节点选择
-      - DIRECT
-      - REJECT
-      - ⚡ 自动选择
-      - "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
-      - "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
-      - "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
-      - "FI - Hostkey\r [ VLESS - TLS ]"
-      - "GB - Aeza International\r [ VLESS - TLS ]"
-  - type: select
-    name: 🐟 漏网之鱼
-    proxies:
-      - 🚀 节点选择
-      - DIRECT
-      - REJECT
-      - ⚡ 自动选择
-      - "NL - CGI GLOBAL LIMITED\r [ VLESS - TLS ]"
-      - "DE - IP Lomakin Artem Aleksandrovich\r [ VLESS - TLS ]"
-      - "US - MULTACOM CORPORATION\r [ VLESS - TLS ]"
-      - "FI - Hostkey\r [ VLESS - TLS ]"
-      - "GB - Aeza International\r [ VLESS - TLS ]"
+      - ⚡ Auto Select
+      - "SG - Amazoncom\r [ VLESS - TLS ]"
+      - "SG - Amazoncom\r [ VLESS - TLS ] 2"
+      - "SG - Hetzner Online\r [ VLESS - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ]"
+      - "ID - GOLD IP LLC FZ\r [ TROJAN - TLS ] 2"
+      - "ID - PT Telkom Indonesia\r [ TROJAN - TLS ]"
+      - "ID - Amazoncom\r [ TROJAN - TLS ]"
+      - "SG - Amazoncom\r [ SS - TLS ]"
+      - "SG - Hetzner Online\r [ SS - TLS ]"
+      - "SG - Alibaba\r [ SS - TLS ]"
 rules:
-  - RULE-SET,youtube,📹 油管视频
-  - RULE-SET,google,🔍 谷歌服务
-  - RULE-SET,facebook,🌐 社交媒体
-  - RULE-SET,instagram,🌐 社交媒体
-  - RULE-SET,twitter,🌐 社交媒体
-  - RULE-SET,tiktok,🌐 社交媒体
-  - RULE-SET,linkedin,🌐 社交媒体
-  - RULE-SET,netflix,🎬 流媒体
-  - RULE-SET,hulu,🎬 流媒体
-  - RULE-SET,disney,🎬 流媒体
-  - RULE-SET,hbo,🎬 流媒体
-  - RULE-SET,amazon,🎬 流媒体
-  - RULE-SET,bahamut,🎬 流媒体
-  - RULE-SET,steam,🎮 游戏平台
-  - RULE-SET,epicgames,🎮 游戏平台
-  - RULE-SET,ea,🎮 游戏平台
-  - RULE-SET,ubisoft,🎮 游戏平台
-  - RULE-SET,blizzard,🎮 游戏平台
-  - RULE-SET,geolocation-!cn,🌐 非中国
-  - RULE-SET,google,🔍 谷歌服务,no-resolve
-  - RULE-SET,private,🏠 私有网络,no-resolve
-  - RULE-SET,telegram,📲 电报消息,no-resolve
-  - MATCH,🐟 漏网之鱼
+  - RULE-SET,geolocation-cn,🔒 China Services
+  - RULE-SET,cn,🔒 China Services
+  - RULE-SET,geolocation-!cn,🌐 Non-China
+  - RULE-SET,private,🏠 Private Network,no-resolve
+  - RULE-SET,cn,🔒 China Services,no-resolve
+  - MATCH,🐟 Fall Back
