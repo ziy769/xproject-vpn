@@ -15,7 +15,6 @@ external-ui: ui
 external-ui-name: Zashboard
 external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"
 secret: 63051
-
 authentication:
   - nikki:63051
     allow-origins:
