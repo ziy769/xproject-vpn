@@ -1,0 +1,498 @@
+
+mode: rule
+log-level: silent
+mixed-port: 7890
+redir-port: 7891
+tproxy-port: 7892
+port: 8080
+socks-port: 1080
+ipv6: true
+allow-lan: true
+unified-delay: true
+tcp-concurrent: true
+external-controller: "[::]:9090"
+external-ui: ui
+external-ui-name: Zashboard
+external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"
+secret: 63051
+
+authentication:
+  - nikki:63051
+    allow-origins:
+        - '*'
+    allow-private-network: true
+external-ui: ""
+external-ui-url: ""
+external-ui-name: ""
+external-doh-server: ""
+secret: 143772bab9dfbb86
+interface-name: ""
+routing-mark: 0
+tunnels: []
+geo-auto-update: true
+geo-update-interval: 24
+geodata-mode: true
+geodata-loader: standard
+geosite-matcher: ""
+tcp-concurrent: false
+find-process-mode: always
+global-client-fingerprint: chrome
+global-ua: clash.meta/1.19.12
+etag-support: true
+keep-alive-idle: 30
+keep-alive-interval: 30
+disable-keep-alive: false
+proxy-providers: {}
+rule-providers:
+    facebook:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        path: ./ruleset/facebook.mrs
+        type: http
+        url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/facebook.mrs
+    geolocation-!cn:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        path: ./ruleset/geolocation-!cn.mrs
+        type: http
+        url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-!cn.mrs
+    google:
+        behavior: ipcidr
+        format: mrs
+        interval: 86400
+        path: ./ruleset/google.mrs
+        type: http
+        url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs
+    instagram:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        path: ./ruleset/instagram.mrs
+        type: http
+        url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/instagram.mrs
+    linkedin:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        path: ./ruleset/linkedin.mrs
+        type: http
+        url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/linkedin.mrs
+    tiktok:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        path: ./ruleset/tiktok.mrs
+        type: http
+        url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs
+    twitter:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        path: ./ruleset/twitter.mrs
+        type: http
+        url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/twitter.mrs
+    youtube:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        path: ./ruleset/youtube.mrs
+        type: http
+        url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs
+proxies:
+    - alterId: 0
+      cipher: zero
+      name: SG - Amazoncom
+      network: ws
+      port: 443
+      server: quiz.vidio.com
+      servername: xinquins.dpdns.org
+      tls: true
+      type: vmess
+      uuid: aacac2d2-cac8-442a-9f2c-4e4f807065f5
+      ws-opts:
+        headers:
+            Host: xinquins.dpdns.org
+        path: /3.1.116.161-8443
+    - alterId: 0
+      cipher: zero
+      name: SG - Alibaba
+      network: ws
+      port: 443
+      server: quiz.vidio.com
+      servername: xinquins.dpdns.org
+      tls: true
+      type: vmess
+      uuid: aacac2d2-cac8-442a-9f2c-4e4f807065f5
+      ws-opts:
+        headers:
+            Host: xinquins.dpdns.org
+        path: /8.219.59.132-48964
+    - alterId: 0
+      cipher: zero
+      name: SG - Vultr
+      network: ws
+      port: 443
+      server: quiz.vidio.com
+      servername: xinquins.dpdns.org
+      tls: true
+      type: vmess
+      uuid: aacac2d2-cac8-442a-9f2c-4e4f807065f5
+      ws-opts:
+        headers:
+            Host: xinquins.dpdns.org
+        path: /45.32.124.255-443
+    - alterId: 0
+      cipher: zero
+      name: SG - OVH Hosting
+      network: ws
+      port: 443
+      server: quiz.vidio.com
+      servername: xinquins.dpdns.org
+      tls: true
+      type: vmess
+      uuid: aacac2d2-cac8-442a-9f2c-4e4f807065f5
+      ws-opts:
+        headers:
+            Host: xinquins.dpdns.org
+        path: /51.79.158.58-8443
+    - alterId: 0
+      cipher: zero
+      name: SG - Streamline Servers
+      network: ws
+      port: 443
+      server: quiz.vidio.com
+      servername: xinquins.dpdns.org
+      tls: true
+      type: vmess
+      uuid: aacac2d2-cac8-442a-9f2c-4e4f807065f5
+      ws-opts:
+        headers:
+            Host: xinquins.dpdns.org
+        path: /83.142.30.4-2096
+    - alterId: 0
+      cipher: zero
+      name: SG - DigitalOcean LLC
+      network: ws
+      port: 443
+      server: quiz.vidio.com
+      servername: xinquins.dpdns.org
+      tls: true
+      type: vmess
+      uuid: aacac2d2-cac8-442a-9f2c-4e4f807065f5
+      ws-opts:
+        headers:
+            Host: xinquins.dpdns.org
+        path: /128.199.134.152-443
+proxy-groups:
+    - interval: 300
+      lazy: false
+      name: ⚡ Auto Select
+      proxies:
+        - SG - Amazoncom
+        - SG - Alibaba
+        - SG - Vultr
+        - SG - OVH Hosting
+        - SG - Streamline Servers
+        - SG - DigitalOcean LLC
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - name: "\U0001F680 Benxx Project"
+      proxies:
+        - DIRECT
+        - REJECT
+        - ⚡ Auto Select
+        - SG - Amazoncom
+        - SG - Alibaba
+        - SG - Vultr
+        - SG - OVH Hosting
+        - SG - Streamline Servers
+        - SG - DigitalOcean LLC
+      type: select
+    - name: "\U0001F41F Fall Back"
+      proxies:
+        - "\U0001F680 Benxx Project"
+        - DIRECT
+        - REJECT
+        - ⚡ Auto Select
+        - SG - Amazoncom
+        - SG - Alibaba
+        - SG - Vultr
+        - SG - OVH Hosting
+        - SG - Streamline Servers
+        - SG - DigitalOcean LLC
+      type: select
+    - name: "\U0001F50D Google Services"
+      proxies:
+        - "\U0001F680 Benxx Project"
+        - DIRECT
+        - REJECT
+        - ⚡ Auto Select
+        - SG - Amazoncom
+        - SG - Alibaba
+        - SG - Vultr
+        - SG - OVH Hosting
+        - SG - Streamline Servers
+        - SG - DigitalOcean LLC
+      type: select
+    - name: "\U0001F310 Non-China"
+      proxies:
+        - "\U0001F680 Benxx Project"
+        - DIRECT
+        - REJECT
+        - ⚡ Auto Select
+        - SG - Amazoncom
+        - SG - Alibaba
+        - SG - Vultr
+        - SG - OVH Hosting
+        - SG - Streamline Servers
+        - SG - DigitalOcean LLC
+      type: select
+    - name: "\U0001F310 Social Media"
+      proxies:
+        - "\U0001F680 Benxx Project"
+        - DIRECT
+        - REJECT
+        - ⚡ Auto Select
+        - SG - Amazoncom
+        - SG - Alibaba
+        - SG - Vultr
+        - SG - OVH Hosting
+        - SG - Streamline Servers
+        - SG - DigitalOcean LLC
+      type: select
+    - name: "\U0001F4F9 Youtube"
+      proxies:
+        - "\U0001F680 Benxx Project"
+        - DIRECT
+        - REJECT
+        - ⚡ Auto Select
+        - SG - Amazoncom
+        - SG - Alibaba
+        - SG - Vultr
+        - SG - OVH Hosting
+        - SG - Streamline Servers
+        - SG - DigitalOcean LLC
+      type: select
+rules:
+    - "RULE-SET,youtube,\U0001F4F9 Youtube"
+    - "RULE-SET,google,\U0001F50D Google Services"
+    - "RULE-SET,facebook,\U0001F310 Social Media"
+    - "RULE-SET,instagram,\U0001F310 Social Media"
+    - "RULE-SET,twitter,\U0001F310 Social Media"
+    - "RULE-SET,tiktok,\U0001F310 Social Media"
+    - "RULE-SET,linkedin,\U0001F310 Social Media"
+    - "RULE-SET,geolocation-!cn,\U0001F310 Non-China"
+    - "RULE-SET,google,\U0001F50D Google Services,no-resolve"
+    - "MATCH,\U0001F41F Fall Back"
+sub-rules: {}
+listeners: []
+hosts: {}
+dns:
+    enable: true
+    prefer-h3: true
+    ipv6: false
+    ipv6-timeout: 300
+    use-hosts: true
+    use-system-hosts: true
+    respect-rules: false
+    nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 8.8.8.8
+        - 8.8.4.4
+        - 1.0.0.1
+        - 1.1.1.1
+        - tls://223.5.5.5:853
+        - tls://8.8.8.8
+        - tls://8.8.4.4
+        - tls://1.0.0.1
+        - tls://1.1.1.1
+        - https://dns.alidns.com/dns-query#h3=true
+        - https://mozilla.cloudflare-dns.com/dns-query#DNS&h3=true
+        - quic://dns.adguard.com:784
+        - system
+    fallback: []
+    fallback-filter:
+        geoip: true
+        geoip-code: CN
+        ipcidr: []
+        domain: []
+        geosite: []
+    listen: ""
+    enhanced-mode: fake-ip
+    fake-ip-range: 172.19.0.1/16
+    fake-ip-filter:
+        - '*.lan'
+        - '*.local'
+        - time.*.com
+        - time.*.gov
+        - time.*.edu.cn
+        - time.*.apple.com
+        - time-ios.apple.com
+        - time1.*.com
+        - time2.*.com
+        - time3.*.com
+        - time4.*.com
+        - time5.*.com
+        - time6.*.com
+        - time7.*.com
+        - ntp.*.com
+        - ntp1.*.com
+        - ntp2.*.com
+        - ntp3.*.com
+        - ntp4.*.com
+        - ntp5.*.com
+        - ntp6.*.com
+        - ntp7.*.com
+        - '*.time.edu.cn'
+        - '*.ntp.org.cn'
+        - '*.pool.ntp.org'
+        - +.services.googleapis.cn
+        - +.push.apple.com
+        - time1.cloud.tencent.com
+        - localhost.ptlogin2.qq.com
+        - +.stun.*.*
+        - +.stun.*.*.*
+        - +.stun.*.*.*.*
+        - +.stun.*.*.*.*.*
+        - lens.l.google.com
+        - '*.n.n.srv.nintendo.net'
+        - +.stun.playstation.net
+        - xbox.*.*.microsoft.com
+        - '*.*.xboxlive.com'
+        - '*.msftncsi.com'
+        - '*.msftconnecttest.com'
+        - '*.mcdn.bilivideo.cn'
+        - +.bilibili.com
+        - +.bilicdn.com
+        - +.bilivideo.com
+        - +.market.xiaomi.com
+        - WORKGROUP
+    fake-ip-filter-mode: blacklist
+    default-nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 8.8.8.8
+        - 8.8.4.4
+        - 1.0.0.1
+        - 1.1.1.1
+        - system
+    cache-algorithm: arc
+    cache-max-size: 0
+    nameserver-policy:
+        geosite:cn,private:
+            - https://120.53.53.53/dns-query
+            - https://223.5.5.5/dns-query
+        geosite:geolocation-!cn:
+            - https://dns.cloudflare.com/dns-query
+            - https://dns.google/dns-query
+    proxy-server-nameserver: []
+    direct-nameserver: []
+    direct-nameserver-follow-policy: false
+ntp:
+    enable: false
+    server: time.apple.com
+    port: 123
+    interval: 30
+    dialer-proxy: ""
+    write-to-system: false
+tun:
+    enable: true
+    device: Clash Mi
+    stack: gVisor
+    dns-hijack:
+        - 0.0.0.0:53
+    auto-route: false
+    auto-detect-interface: false
+    mtu: 9000
+    gso: false
+    gso-max-size: 0
+    inet6-address:
+        - fdfe:dcba:9876::1/126
+    iproute2-table-index: 0
+    iproute2-rule-index: 0
+    auto-redirect: false
+    auto-redirect-input-mark: 0
+    auto-redirect-output-mark: 0
+    loopback-address: []
+    strict-route: false
+    route-address: []
+    route-address-set: []
+    route-exclude-address: []
+    route-exclude-address-set: []
+    include-interface: []
+    exclude-interface: []
+    include-uid: []
+    include-uid-range: []
+    exclude-uid: []
+    exclude-uid-range: []
+    exclude-src-port: []
+    exclude-src-port-range: []
+    exclude-dst-port: []
+    exclude-dst-port-range: []
+    include-android-user: []
+    include-package: []
+    exclude-package: []
+    endpoint-independent-nat: false
+    udp-timeout: 0
+    file-descriptor: 0
+    inet4-route-address: []
+    inet6-route-address: []
+    inet4-route-exclude-address: []
+    inet6-route-exclude-address: []
+    recvmsgx: true
+    sendmsgx: false
+tuic-server:
+    enable: false
+    listen: ""
+    token: []
+    users: {}
+    certificate: ""
+    private-key: ""
+    congestion-controller: ""
+    max-idle-time: 15000
+    authentication-timeout: 1000
+    alpn:
+        - h3
+    max-udp-relay-packet-size: 1500
+    cwnd: 0
+iptables:
+    enable: false
+    inbound-interface: lo
+    bypass: []
+    dns-redirect: true
+experimental:
+    fingerprints: []
+    quic-go-disable-gso: false
+    quic-go-disable-ecn: true
+    dialer-ip4p-convert: false
+profile:
+    store-selected: true
+    store-fake-ip: true
+geox-url:
+    geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+    mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+    asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+    geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+sniffer:
+    enable: false
+    override-destination: true
+    sniffing: []
+    force-domain: []
+    skip-src-address: []
+    skip-dst-address: []
+    skip-domain: []
+    port-whitelist: []
+    force-dns-mapping: true
+    parse-pure-ip: true
+    sniff: {}
+tls:
+    certificate: ""
+    private-key: ""
+    ech-key: ""
+    custom-certifactes: []
+clash-for-android:
+    append-system-dns: false
+    ui-subtitle-pattern: ""
