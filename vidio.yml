@@ -40,7 +40,7 @@ mode: rule
 unified-delay: true
 log-level: error
 ipv6: false
-external-controller-pipe: "\\.\pipe\mihomo"
+external-controller-pipe: "pipe\mihomo"
 external-controller-unix: " mihomo.sock"
 external-controller-tls: "127.0.0.1:9443"
 external-controller-cors:
