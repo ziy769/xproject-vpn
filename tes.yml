@@ -5,7 +5,7 @@ log-level: error
 ipv6: false
 external-controller: 127.0.0.1:9090
 external-ui: 'dist'
-external-ui-url: 'https://github.com/Zephyruso/zashboard/releases/latest/download/dist-cdn-fonts.zip'
+external-ui-url: 'https://clash.wolfblank.com/meta/mihomo/'
 external-ui-name: 'zashboard'
 secret: ''
 find-process-mode: always
@@ -102,7 +102,6 @@ dns:
   direct-nameserver-follow-policy: false
 tun:
   enable: true
-  device: Clash Mi
   stack: gvisor
   dns-hijack:
     - 0.0.0.0:53
